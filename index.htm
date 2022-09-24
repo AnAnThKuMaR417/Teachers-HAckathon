@@ -9,10 +9,82 @@
     <script src="scripts.js"></script>
 </head>
 <body>
+    <div class="main">
+        <div class="logo">Ez-Portal</div>
     <div class="navbar">
-        <li>ananth</li>
         <li></li>
+        <li> <a href="#"> Home</a></li>
+        <li> <a href="#attendance"> Attendance section</a></li>
+        <li> <a href="#marks">Marks section</a></li>
+    </div>
+    <div class="attendance" id="attendance">
+    <div class="classes">
+        <div class="sections"><span class="t1"> CLASSES</span>
+        <button onclick="fun1()" id="cs">8a</button>
+        <button onclick="fun2()" id="cs1">9b</button>
+        <button onclick="fun3()" id="cs2">10c</button>
+
+        </div>
+        <div class="attendancesection">
+            <div class="table"><label for="date">Select date</label>
+                <input type="date" id="date" name="date">
+                <div class="row1" id="n1">
+                <div class="name1">  Name   <div class="pa">Attendance</div></div>
+
+                 <div class="name1"> <span id="name1"> Justin </span>   <div class="pa"><input type="checkbox" class="ip" >present<input type="checkbox" class="ia"  >absent</div></div>
+                 <div class="name1"> <span id="name2"> Jack </span>  <div class="pa"><input type="checkbox" class="ip"  >present<input type="checkbox" class="ia"  >absent</div></div>
+                 <div class="name1"> <span id="name3"> Julie </span>  <div class="pa"><input type="checkbox" class="ip"  >present<input type="checkbox" class="ia"  >absent</div></div>
+                 <div class="name1"> <span id="name4"> Megan </span>  <div class="pa"><input type="checkbox" class="ip" >present<input type="checkbox" class="ia"  >absent</div></div>
+                 <div class="name1"> <span id="name5"> Mia</span>  <div class="pa"><input type="checkbox" class="ip" >present<input type="checkbox" class="ia"  >absent</div></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="st">
+        <div class="addstudent" id="addstudent"><button>Add student</button></div>
+        <div class="delstudent" id="delstudent"><button>Remove student</button></div>
+        </div>
+        
+    <div class="button" > <button onclick="getdate()">Submit</button></div>
+
+    </div>
+        <h2 class="view">Now viewing Attendance of <span class="c" id="c">8a</span> on <span class="d" id="d">24/9/22</span></h2>
+        <div class="newsfeed">
+            <span class="tn"> Newsfeed </span>
+            <li> <a href="#" target="_blank"> Nitte-college is to be Deemed</a></li><br>
+            <li> <a href="#" target="_blank"> College to remain closed on Monday</a></li>
+        </div>
+    </div>
+    <div class="marks" id="marks">
+        <div class="table2">
+            <div class="row2" id="n2">
+             <div class="name1">  Name   <div class="pa">Marks</div></div>
+             <div class="name1">  <span id="name1">Justin </span>  <div class="pa"><input type="text" class="i1"></div></div>
+             <div class="name1">  <span id="name2">Jack </span> <div class="pa"><input type="text" class="i2"></div></div>
+             <div class="name1">  <span id="name3">Julie </span>  <div class="pa"><input type="text" class="i3"></div></div>
+             <div class="name1">  <span id="name4">Megan </span>  <div class="pa"><input type="text" class="i4"></div></div>
+             <div class="name1">  <span id="name5">Mia </span>  <div class="pa"><input type="text" class="i4"></div></div>
+
+            </div>
+    </div>
+    </div>
+    <button class="up" onclick="update()">Update</button>
+
+
+
+
+    <div class="popupentry">
+        <div class="entry">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </div>
     </div>
 
+
+
+
+
+
+    </div>
 </body>
 </html>
